@@ -8,3 +8,9 @@ x = input("what is num1: ")
 y = input("what is num2: ")
 z = x + y
 print(z)
+x = input("What is num1: ")
+y = input("what is num2: ")
+x = int(x)
+y = int(y)
+z = x + y
+print(z)
