@@ -1,6 +1,6 @@
 check = False
 while check == False:
-    option = input("what operation do you want to do? type quit to exit ")
+    option = input("what operation do you want to do? (type quit to exit): ")
     if option == "addition":
         x = input("what is x? ")
         y = input("what is y? ")
@@ -28,5 +28,6 @@ while check == False:
          x = int(x)
          y = int(y)
          quotiant = x / y
+         print(f"the quotiant of {x} and {y} is {quotiant}")
     elif option == "quit":
         check = True
