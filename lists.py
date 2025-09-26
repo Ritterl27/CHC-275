@@ -14,7 +14,6 @@ while i <= len(mylist) - 1:
     i = i + 1
 for num in mylist:
     print(num)
-
 print(mylist)
 for num in mylist:
     num = num + 5
