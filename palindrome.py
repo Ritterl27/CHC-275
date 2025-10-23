@@ -1,5 +1,5 @@
-reverse = ""
+reverse =  ""
 pal = input("what is your word? ").strip().lower()
 for char in pal:
-    reverse = pal2 + pal
+    reverse = char + reverse 
 print(reverse)
