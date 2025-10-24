@@ -8,6 +8,3 @@ for char in str:
         b = b + 1
 print(f"there is {a} a's")
 print(f"there is {b} b's")
-
-ad = str.count("a")
-print(ad)
