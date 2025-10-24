@@ -3,13 +3,13 @@ large = []
 medium = []
 small = []
 while check == False:
-    mushroom = input("what is the size of your mushroom?(type stop to end program) ").strip()
+    mushroom = input("what is the size of your mushroom?(type stop to end program) ").strip().lower()
     if mushroom == "stop":
         check = True
         print(f"your large mushrooms are {large}")
         print(f"your medium mushrooms are {medium}")
         print(f"your small mushrooms are {small}")
-    if mushroom.isnumeric():
+    elif mushroom.isnumeric():
         mushroom = int(mushroom)
         if mushroom < 100:
             small.append(mushroom)
