@@ -58,7 +58,7 @@ file.close()
 
 
 """file = open("day2.txt","r")
-buffer = file.readlines()
+buffer = file.readlines().3
 file.close()
 msft2 = buffer[0].split(",")
 amzn2 = buffer[1].split(",")
