@@ -66,9 +66,39 @@ while Check == False:
         
     elif x == "2":
         print(cart)
-        x = input("what would you like to remove?").strip().lower()
+        x = input("what would you like to remove? ").strip().lower().replace(" ", "")
         if x == "bananas":
             index = foods.index("bananas")
+            cartmoney = cartmoney - price[index]
+            cart.remove("bananas")
+            print(cartmoney)
+            print(cart)
+        elif x == "apples":
+            index = foods.index("apples")
+            cartmoney = cartmoney - price[index]
+            print(cartmoney)
+        elif x == "rawsteak":
+            index = foods.index("raw steak")
+            cartmoney = cartmoney - price[index]
+            print(cartmoney)
+        elif x == "milk":
+            index = foods.index("milk")
+            cartmoney = cartmoney - price[index]
+            print(cartmoney)
+        elif x == "orangejuice":
+            index = foods.index("orange juice")
+            cartmoney = cartmoney - price[index]
+            print(cartmoney)
+        elif x == "eggs":
+            index = foods.index("eggs")
+            cartmoney = cartmoney - price[index]
+            print(cartmoney)
+        elif x == "rice":
+            index = foods.index("rice")
+            cartmoney = cartmoney - price[index]
+            print(cartmoney)
+        elif x == "loafofbread":
+            index = foods.index("loaf of bread")
             cartmoney = cartmoney - price[index]
             print(cartmoney)
 
