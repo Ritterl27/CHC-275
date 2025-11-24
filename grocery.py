@@ -12,12 +12,12 @@ for line in buffer:
         foods.append(line[0])
         line[1] = float(line[1])
         price.append(line[1])
+print("welcome to the online grocery store")
 while Check == False:
-    
-    print("welcome to the online grocery store")
     print("1. add to cart")
     print("2. remove items")
     print("3. check out")
+    print("4. quit")
     x = input("please select a function ")
     if x == "1":
         print(foods)
@@ -71,45 +71,58 @@ while Check == False:
             index = foods.index("bananas")
             cartmoney = cartmoney - price[index]
             cart.remove("bananas")
-            print(cartmoney)
-            print(cart)
+            print(f"your cart balance is {cartmoney}")
+            print(f"your cart is {cart}")
         elif x == "apples":
             index = foods.index("apples")
             cartmoney = cartmoney - price[index]
-            print(cartmoney)
+            cart.remove("apples")
+            print(f"your cart balance is {cartmoney}")
+            print(f"your cart is {cart}")
         elif x == "rawsteak":
             index = foods.index("raw steak")
             cartmoney = cartmoney - price[index]
-            print(cartmoney)
+            cart.remove("raw steak")
+            print(f"your cart balance is {cartmoney}")
+            print(f"your cart is {cart}")
         elif x == "milk":
             index = foods.index("milk")
             cartmoney = cartmoney - price[index]
-            print(cartmoney)
+            cart.remove("milk")
+            print(f"your cart balance is {cartmoney}")
+            print(f"your cart is {cart}")
         elif x == "orangejuice":
             index = foods.index("orange juice")
             cartmoney = cartmoney - price[index]
-            print(cartmoney)
+            cart.remove("orange juice")
+            print(f"your cart balance is {cartmoney}")
+            print(f"your cart is {cart}")
         elif x == "eggs":
             index = foods.index("eggs")
             cartmoney = cartmoney - price[index]
-            print(cartmoney)
+            cart.remove("eggs")
+            print(f"your cart balance is {cartmoney}")
+            print(f"your cart is {cart}")
         elif x == "rice":
             index = foods.index("rice")
             cartmoney = cartmoney - price[index]
-            print(cartmoney)
+            cart.remove("rice")
+            print(f"your cart balance is {cartmoney}")
+            print(f"your cart is {cart}")
         elif x == "loafofbread":
             index = foods.index("loaf of bread")
             cartmoney = cartmoney - price[index]
-            print(cartmoney)
-
-
-    """
-    sub_total = 10.75
-    tax = sub_total *0.06
-    total = sub_total + tax
-
-    
-    
-    """
+            cart.remove("loaf of bread")
+            print(f"your cart balance is {cartmoney}")
+            print(f"your cart is {cart}")
+    elif x == "3":
+        tax = cartmoney *0.06
+        total = cartmoney + tax
+        print(f"the total cost for your purchase is ${total}")
+    elif x == "4":
+        Check = True
+        print("thanks for using the grocery program")
+    else:
+        print("that is not a function of the grocery program")
 
 
